@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div id="wrapper">
+      <section>
+
+        <ul id="gallery">
+          <li>
+            <a href="http://ec2-52-26-88-195.us-west-2.compute.amazonaws.com/" target="_blank">
+            <img src="static/swts.png" alt="Swim With the Shark app">
+            <p><strong>Swim With the Shark</strong>: a Forex trading-results analysis tool</br>
+              Built using: Django, Pandas, Matplotlib, Postgresql
+            </p>
+            </a>
+          </li>
+
+          <li>
+            <a href="http://ec2-52-11-76-189.us-west-2.compute.amazonaws.com/" target="_blank">
+            <img src="static/restaurant.png" alt="Restaurant app">
+            <p><strong>Restaurant</strong>: Our Django first-weekend team-project/homework. </br>
+            With owner customizable menus. Orders are placed by users and received by the kitchen staff.
+            Users can leave comments and feedback.</p>
+            </a>
+          </li>
+
+          <li>
+            <a  href="static/question_box.png">
+            <img src="static/question_box.png" alt="QuestionBox app">
+            <p><strong>QuestionBox</strong>: A question and answer application where users receive reputation by
+              asking and answering questions.  Answers can be voted up or down by users.</p>
+            </a>
+          </li>
+
+          <li>
+            <a id="parking" href="static/parking.png">
+            <img src="static/parking.png" alt="Coming Soon">
+            <p><strong>Coming Soon!</strong></p>
+            </a>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+{% endblock %}

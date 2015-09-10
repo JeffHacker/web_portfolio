@@ -1,0 +1,241 @@
+/*********************************************
+GENERAL
+*********************************************/
+
+body {
+  font-family: Maven+Pro, sans-serif;
+}
+
+/* id for large div tag holding pics */
+#wrapper{
+  max-width: 940px;
+  /* 0 for top-bottom and auto for L-R margin */
+  margin: 0 auto;
+  /* 0 for top-bottom and 5% for L-R padding */
+  padding: 0 5%;
+}
+
+/* no underline on text links */
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+/*********************************************
+HEADING
+*********************************************/
+
+/* this is my header with id # of 'logo' text alignment and margin */
+/* id's are like a class but specific to one thing only and must be unique */
+
+header {
+  /* float left is useful for desktop layout*/
+  float: left;
+  /* 4 items starts at top and sets going clockwise */
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Asap', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/*********************************************
+Navigation
+*********************************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  /* padding makes click targt easier to hit */
+  padding: 15px 10px;
+}
+
+
+
+/*********************************************
+FOOTER
+*********************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  /* this keeps the footer from floating around next to the pics */
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px;
+  padding: 7px;
+}
+
+
+
+/*********************************************
+page: PORTFOLIO
+*********************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  /* img floats and text flows around it - float allows side by side */
+  float: left;
+  /* img will only take up 45% of the width no matter what, so side-by-side fits */
+  width: 45%;
+  /* 45%*2 plus 2.5% on both sides of each img makes 100% of page */
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3cf;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 1.25em;
+  color: #bdc3c7
+}
+
+#parking {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+
+
+/*********************************************
+page: ABOUT
+*********************************************/
+
+#beard {
+  float: left;
+  width: 25%;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+#about {
+  margin: 0;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+#pdf {
+  text-align: center;
+  /* this keeps the footer from floating around next to the pics */
+  clear: both;
+  padding-top: 50px;
+  text-align: center;
+}
+
+
+/*********************************************
+page: CONTACT
+*********************************************/
+
+#grad_pic {
+  width: 25%;
+  float: left;
+  margin: 5px 0;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+#contacttext {
+  margin: 0;
+}
+
+
+/*********************************************
+COLORS
+*********************************************/
+
+/* site body background and text color */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* header section background and border colors - green*/
+header {
+  background:  #6ab47b;
+  border-color: #599a68;
+}
+
+/* class - nav bar text color */
+nav {
+  background: #599a68;
+}
+
+/* text color for h1 and h2 tags' text */
+h1, h2 {
+  color: #fff
+}
+
+/* sets link text color */
+a {
+  text-decoration: none;
+  color: #6ab47b;
+}
+
+/* nav links text color and hover-over color */
+/* nav a:visited is a psuedo class */
+nav a , nav a:visited {
+  color: #fff;
+}
+
+/* class nav a-link selected and hover color */
+nav a.selected, nav a:hover{
+  color: #32673f;
+}
+
+footer {
+  background:  #6ab47b;
+  border-color: #599a68;
+}

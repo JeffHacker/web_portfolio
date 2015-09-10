@@ -1,35 +1,58 @@
-{% block css %}
-<head>
-    {% load staticfiles %}
+{% block top %}
+<!DOCTYPE html>
+<html>
 
-    <link href="{% static 'questionbox/questionapp/static/bootstrap.min.css' %}"
-      rel="stylesheet" media="screen">
+  <head>
+    <meta charset="utf-8">
+    <title>Jeff Hacker | Django dude</title>
+    <link rel="stylesheet" href="static/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Asap:400,700italic,
+                400italic,700|Maven+Pro:400,900,700,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/main.css">
+  </head>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <body>
 
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<footer>
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <header>
+      <a href="portfolio.html" id="logo">
+        <h1>Jeffrey Hacker</h1>
+        <h2>Junior Developer</h2>
+      </a>
 
-            <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-</footer>
+      <nav>
+        <ul>
+          <li><a href="portfolio_links">Portfolio</a></li>
+          <li><a href="resume">Resume</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contacts">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 {% endblock %}
 
 
-{% block body %}
-<!DOCTYPE html>
-<html lang="en">
-<body>
 
-</body>
+{% block content %}
+
+    DO SOME WORK HERE!!!!!!!!!!!!!!!!!!!!
+
+{% endblock %}
 
 
 
-</html>
+{% block footer %}
+    <div>
+      <footer>
+        <a href="http://twitter.com/JeffreyHacker" target="_blank">
+          <img source src="static/twitter-128.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://github.com/JeffHacker" target="_blank">
+          <img source src="static/github-128.png" alt="Github Logo" class="social-icon"></a>
+        <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank">
+          <img source src="static/linkedin-128.ico" alt="linkedin Logo" class="social-icon"></a>
+        <p>&copy; 2015 Jeff Hacker</p>
+      </footer>
+    </div>
+  </body>
+ </html>
 {% endblock %}

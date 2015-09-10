@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from portapp.views import landing
+from portapp.views import landing, portfolio_links, resume, contacts, about
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', landing, name='landing'),
+    url(r'^$', portfolio_links, name='portfolio_links'),
+    url(r'^portfolio_links$', portfolio_links, name='portfolio_links'),
+    url(r'^resume$', resume, name='resume'),
+    url(r'^about$', about, name='about'),
+    url(r'^contacts$', contacts, name='contacts'),
 ]
