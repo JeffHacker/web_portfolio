@@ -112,7 +112,7 @@ footer {
   text-align: center;
   /* this keeps the footer from floating around next to the pics */
   clear: both;
-  padding-top: 50px;
+  padding-top: 20px;
   color: #ccc;
 }
 
@@ -122,6 +122,9 @@ footer {
   margin: 0 5px;
 }
 
+#copyright {
+  padding-bottom: 3px;
+}
 
 
 /*********************************************
@@ -164,13 +167,15 @@ page: ABOUT
   padding-bottom: 25px;
 }
 
+
 .about li {
     list-style: none;
-
+    color: #607B63
 }
 
 .about {
   margin: 0;
+
 }
 
 iframe {
@@ -185,6 +190,9 @@ iframe {
   text-align: center;
 }
 
+#manager {
+  text-align: center;
+}
 
 /*********************************************
 page: CONTACT
@@ -204,6 +212,11 @@ page: CONTACT
   font-size: 1em;
 }
 
+/* Contact page link text color */
+#contactli a{
+  color: #607B63;
+}
+
 #contacttext {
   margin: 0;
 }
@@ -216,7 +229,7 @@ COLORS
 /* site body background and text color */
 body {
   background-color: #E9EDEC;
-  color: #999;
+  color: #607B63
 }
 
 /* header section background and border colors - green*/
